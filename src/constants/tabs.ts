@@ -2,12 +2,22 @@ const HOME_TABS = [
   {  
     label: "_hello",
     active: false,
-    onClick: () => { }
+    route: "/"
   },
   {
-    label: "_point",
+    label: "_about",
     active: false,
-    onClick: () => { }
+    route: "/about"
+  },
+  {
+    label: "_projects",
+    active: false,
+    route: "/projects"
+  },
+  {
+    label: "_contact-me",
+    active: false,
+    route: "/contact"
   }
 ]; 
 

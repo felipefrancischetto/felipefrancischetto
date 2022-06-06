@@ -1,13 +1,15 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import Head from 'next/head'
-import Point from "../Point/Point"
 import styles from './Home.module.css'
 
 import { HOME_TABS, FOOTER_TABS } from "../../constants";
 import {  Header, Footer } from "../../components";
-import Hello from "../Hello/Hello";
 
-const Home: React.FC = () => {
+type HomeProps = {
+  children: React.ReactNode
+}
+
+const Home = ({ children }: HomeProps) => {
 
   const hometabs = HOME_TABS;
   const footertabs = FOOTER_TABS;
@@ -24,8 +26,7 @@ const Home: React.FC = () => {
       
       <main className={styles.main}>
         <div className={styles.tabs}>
-          {/* <Point /> */}
-          <Hello />
+          {children}
         </div>
       </main>
 

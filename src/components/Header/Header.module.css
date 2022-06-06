@@ -21,6 +21,7 @@
   color: #607b96;
   font-size: 16px;
   font-weight: 450;
+  border-bottom: 3px groove transparent;
 }
 
 .tabStart:hover,

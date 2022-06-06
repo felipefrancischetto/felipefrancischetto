@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import styles from './Header.module.css'
 
@@ -8,7 +9,7 @@ type HeaderProps = {
 
 type Tab = {
   label: string,
-  onClick: () => void
+  route: string
 }
 
 const Header: React.FC<HeaderProps> = (props) => {
@@ -24,9 +25,11 @@ const Header: React.FC<HeaderProps> = (props) => {
         <div className={styles.tabs}>
           {tabs.map((tab: Tab, index) => {
             return (
-              <button type="button" className={styles.tab} onClick={tab.onClick} key={index}>
-                {tab.label}
-              </button>  
+              <Link href={tab.route} passHref key={index}>
+                <a className={styles.tab}>
+                  {tab.label}
+                </a>
+              </Link>
             )
           })}
         </div>
