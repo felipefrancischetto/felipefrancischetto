@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
-import Hello from '../layout/Hello/Hello'
-import HomePage from '../layout/Home/Home'
+import { Hello } from '../layout'
 
 const Home: NextPage = () => <Hello />
 

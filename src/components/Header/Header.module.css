@@ -8,12 +8,15 @@
 
 .main {
   display: flex;
+  position: relative;
 }
 
 .tabStart,
 .tabEnd,
 .tab {
-  height: 55px;
+  line-height: 55px;
+  display: inline-block;
+  height: 55px; 
   padding: 0 22px;
   border: none;
   border-left: 1px solid #607b96;
@@ -24,21 +27,36 @@
   border-bottom: 3px groove transparent;
 }
 
-.tabStart:hover,
-.tabEnd:hover,
-.tab:hover {
-  position: relative;
-  top: 2px;
-  color: #FFF;
-  border-bottom: 3px groove #FEA55F;
+.wrapperTab {
+  height: 55px; 
 }
 
-.tabStart:active,
+.tabEnd:hover,
+.tab:hover,
+.tab.tabActive,
+.tabEnd.tabActive {
+  color: #FFF;
+  border-bottom: 3px groove #FEA55F;
+  bottom: 0;
+}
+
+/* .active::after {
+  content: '';
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  background: var(--yellow-500);
+} */
+
 .tabEnd:active,
 .tab:active {
   color: #607B96;
 }
 
 .tabStart {
+  width: 310px;
   border: none;
 }

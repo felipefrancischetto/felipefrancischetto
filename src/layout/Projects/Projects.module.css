@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 220px;
+}
+
+.background {
+    width: 50%;
+    height: 100%;
+
+    background-image: url('../../assets/main-background.svg');
+	background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 72px;
+    color: #E5E9F0;
+    white-space: pre;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 32px;
+    color: #4D5BCE;
+    margin: 0;
+}
+
+.commentLine {
+    color: #607B96;
+}

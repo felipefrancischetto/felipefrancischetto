@@ -13,11 +13,6 @@ const HOME_TABS = [
     label: "_projects",
     active: false,
     route: "/projects"
-  },
-  {
-    label: "_contact-me",
-    active: false,
-    route: "/contact"
   }
 ]; 
 

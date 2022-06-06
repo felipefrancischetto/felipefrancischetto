@@ -1,7 +1,7 @@
-import Hello from "../layout/Hello/Hello"
+import { Projects } from "../layout"
 
-function HelloPage() {
-  return <Hello />
+function ProjectsPage() {
+  return <Projects />
 }
 
-export default HelloPage
+export default ProjectsPage
