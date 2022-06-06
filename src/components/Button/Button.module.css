@@ -1,0 +1,30 @@
+
+.btn {
+  font-size: 14px;
+  
+  height: 38px;
+  width: auto;
+  min-width: 112px;
+  border-radius: 8px;
+  border: 1px solid #1C2B3A;
+  padding: 0 12px;
+}
+
+.primary {
+  background-color: #1C2B3A;
+  color: #FFFFFF;
+  border-color: #1C2B3A;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.accent {
+  background-color: #FEA55F;
+  color: #01080E;
+  border-color: #FEA55F;
+  
+}

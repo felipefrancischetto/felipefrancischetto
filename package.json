@@ -1,0 +1,32 @@
+{
+  "name": "gandalf",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:electron": "electron main.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "electron-reload": "^2.0.0-alpha.1",
+    "next": "12.1.6",
+    "puppeteer": "^14.2.1",
+    "puppeteer-core": "^14.2.1",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "remixicon": "^2.5.0",
+    "tesseract.js": "^2.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.39",
+    "@types/react": "18.0.11",
+    "@types/react-dom": "18.0.5",
+    "electron": "^19.0.3",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "4.7.3"
+  }
+}
